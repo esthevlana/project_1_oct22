@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>October demo</title>
+    <title>The Plant Game</title>
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-    <h1>Nathália</h1>
+    <header>
+        <h1>THE PLANT GAME</h1>
+      </header>
+      <div class="flexbox">
+        <div class="game-intro" >
+          <div>
+            <p>So you discovered yourself as a plant lover 
+                but you have no money to buy plants to your garden.</p>
+            <p>
+              Fortunatelly nature gives all the plants for free, so you 
+              can go to the square near to your house to get some seedles 
+              but <b>BE CAREFULL</b>! At the square there's this old crazy lady,
+              that feeds the cats and don't like people messing around,
+              so she trained the cats to scratch people.
+            </p>
+            <p>
+              Your mission is to catch as plants seedles as you can in 
+              60 seconds while dodging the treined cats.
+            </p>
+            <p>Let's GO!</p>
+          </div>
+            <p>When you ready press START</p>
+            <div id="start-button">
+              <button class="start-button">START</button>
+            </div>
+        </div>
+    <div class="flexbox">
+        <canvas id="canvas" width="1080" height="550" style="border: 2px solid #d4a373"></canvas>
+        <script src="/project_1/docs/assets/scripts/cats.js"></script>
+        <script src="/project_1/docs/assets/scripts/player.js"></script>
+        <script src="/project_1/docs/assets/scripts/oldLady.js"></script>
+        <script src="/project_1/docs/assets/scripts/game.js"></script>
+        <script src="/project_1/docs/assets/scripts/main.js"></script>
+    </div>
 </body>
 </html>

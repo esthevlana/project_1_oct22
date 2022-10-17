@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Silkscreen&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    background-image: url(/project_1/docs/assets/images/bg-park.jpg);
+    color: #7f4f24;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 40px;
+    text-decoration: underline;
+    color: white;
+    -webkit-text-stroke: 1px #d4a373;
+}
+
+.game-intro {
+    width: 400px;
+    height: 550px;
+    text-align: center;
+    padding-top: 35px;
+    margin-left: 8px;
+    font-size: 16px;
+    background-color: #fefae0;
+    border-color: #d4a373;
+    border-style: double;
+    border-radius: 12px;
+}
+
+.flexbox {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.start-button {
+    font-family: 'Silkscreen', cursive;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 25px;
+    width: 150px;
+    height: 50px;
+    color: green;
+    background-color: #faedcd;
+    border-radius: 12px;
+    border-color: #d4a373;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.start-button:hover {
+    color: #faedcd;
+    background-color: green;
+  }
+
+  #canvas {
+    margin-top: 2px;
+    margin-right: 20px;
+    background-image: url(/project_1/docs/assets/images/grass-background1.jpg);
+    background-size: 150px;
+  }
