@@ -32,7 +32,16 @@ class Player {
     right() {
       return this.x + this.width;
     }
-  
+
+    crashWith(cats) {
+      return !(
+        this.bottom() < cats.top() ||
+        this.top() >  cats.bottom() ||
+        this.right() < cats.left() ||
+        this.left() > cats.right()
+      );
+    }
+
     /*crashWith(plants) {
       return !(
         this.bottom() < plants.top() ||
@@ -40,6 +49,8 @@ class Player {
         this.right() < plants.left() ||
         this.left() > plants.right()
       );
+
+      
     }*/
   }
 

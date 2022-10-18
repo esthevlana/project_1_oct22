@@ -5,7 +5,7 @@ class OldLady{
         this.width = width;
         this.height = height;
         this.color = color;
-        this.speedOldLady = 0;
+        this.speedOldLady = 1;
         this.ctx = ctx;
     }
 
@@ -24,7 +24,14 @@ class OldLady{
 
     oldLadyMoves() {
         //this.game.frames++;
-        let minY = 200;
+        this.y += this.speedOldLady
+
+        if (this.y + this.width >= 550) {
+            this.speedOldLady = -1
+        } if (this.y <= 100) {
+            this.speedOldLady = 1 
+        }
+    /*     let minY = 200;
         let maxY = 550;
         let yPosition = Math.floor(Math.random() * (maxY - minY) + minY);
         this.y = yPosition;
@@ -33,5 +40,6 @@ class OldLady{
         } if (yPosition < 30) {
             this.y = false
         }
-      }
+      } */
+    }
 }

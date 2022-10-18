@@ -13,7 +13,6 @@ window.onload = () => {
 function startGame() {
   const oldLady = new OldLady (1000, 250, 50, 50, 'yellow', ctx)
   const player = new Player (50, 250, 50, 50, 'red', ctx)
-  //let cats = new Cats (20, 20, ctx, 'purple') 
 
 let game = new Game (ctx, 1080, 550, player, oldLady);
 
@@ -48,58 +47,6 @@ window.addEventListener("keydown", (e) => {
       player.speedY = 0;
     });
 }
-
-/*window.onload = () => {
-    document.getElementById('start-button').onclick = () => {
-      startGame();
-    };
-  
-    function startGame() {
-      let game = new Game();
-      game.start();
-    }
-  };*/
-
-
-/*let x = canvas.width / 20;
-let y = canvas.height - 305;
-
-let dx = 1;
-let dy = -1;
-
-const widthRec = 50;
-
-function drawRect() {
-ctx.beginPath();
-ctx.rect(x, y, widthRec, 50);
-ctx.fillStyle = "#FF0000";
-ctx.fill();
-ctx.closePath();
-}
-setInterval(draw, 10);
-
-
-
-function draw(){
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    drawRect();
-
-    if(x + dx > canvas.width-widthRec || x + dx < widthRec) {
-        dx = -dx;
-    }
-    if(y + dy > canvas.height-widthRec || y + dy < widthRec) {
-        dy = -dy;
-    }
-
-    x += dx;
-    y += dy;
-}
-
-ctx.beginPath();
-ctx.rect(1000, 250, 50, 50);
-ctx.fillStyle = "yellow";
-ctx.fill();
-ctx.closePath();*/
 
 
   
