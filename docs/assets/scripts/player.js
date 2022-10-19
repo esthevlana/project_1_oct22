@@ -42,7 +42,7 @@ class Player {
       );
     }
 
-    /*crashWith(plants) {
+    /* crashWithPlants(plants) {
       return !(
         this.bottom() < plants.top() ||
         this.top() > plants.bottom() ||
@@ -51,7 +51,7 @@ class Player {
       );
 
       
-    }*/
+    } */
   }
 
   
