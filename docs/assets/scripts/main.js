@@ -16,6 +16,10 @@ window.onload = () => {
       startGame();
   }
     restart1.onclick = () => {
+      game.loseSong.pause();
+      game.loseSong.currentTime = 0;
+      game.winSong.pause();
+      game.winSong.currentTime = 0;
       startGame();
   }
 }

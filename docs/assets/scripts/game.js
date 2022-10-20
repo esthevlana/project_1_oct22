@@ -131,7 +131,7 @@ class Game {
   start() {
     this.intervalId = setInterval(this.updateCanvas, 1000 / 60);
     this.gameRunning = true;
-    this.oldLady = new OldLady (1000, 250, 50, 50, 'yellow', ctx, this.seconds)
+    this.oldLady = new OldLady (1000, 250, 50, 60, 'yellow', ctx, this.seconds)
     this.player = new Player (50, 250, 50, 50, ctx)
   
     //this.intervalOldLady = setInterval(this.updateOldLady, 1000);
@@ -209,10 +209,10 @@ class Game {
       drawCountPlants(){
           let plantIcon = new Image();
           plantIcon.src = 'docs/assets/images/planticon.png'
-          this.ctx.drawImage(plantIcon, 950, 30, 25, 25)
-          this.ctx.font = "18px monospace";
+          this.ctx.drawImage(plantIcon, 940, 15, 35, 35)
+          this.ctx.font = "25px monospace";
           this.ctx.fillStyle = "black";
-          this.ctx.fillText(`${this.plantCount}`, 980, 30)
+          this.ctx.fillText(`${this.plantCount}`, 980, 45)
 
     }
   }
