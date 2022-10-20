@@ -38,26 +38,50 @@ function startGame() {
   }
   
 
+}
+
+
+
+let playerImgRight = new Image()
+playerImgRight.src = 'docs/assets/images/playerright.png'
+let playerImgLeft = new Image()
+playerImgLeft.src = 'docs/assets/images/playerleft.png'
+let playerImgUp = new Image()
+playerImgUp.src = 'docs/assets/images/playerup.png'
+let playerImgDown = new Image()
+playerImgDown.src = 'docs/assets/images/playerdown.png'
+
+let playerImg = new Image()
+playerImg.src = playerImgRight.src
+
+
 window.addEventListener("keydown", (e) => {
     switch (e.code) {
       case "ArrowUp":
         if(game.player.y > 100) {
           game.player.y -= 20;
+          playerImg.src = playerImgUp.src;
         }
         break;
       case "ArrowDown":
+        
         if(game.player.y < 487) {
           game.player.y += 20;
+          playerImg.src = playerImgDown.src;
         }
         break;
       case "ArrowLeft":
+        
         if(game.player.x > 10) {
           game.player.x -= 20;
+          playerImg.src = playerImgLeft.src;
         }
         break;
       case "ArrowRight":
+        
         if(game.player.x < 450) {
           game.player.x += 20;
+          playerImg.src = playerImgRight.src;
         }
         break;
     }});
@@ -66,4 +90,3 @@ window.addEventListener("keydown", (e) => {
       game.player.speedX = 0;
       game.player.speedY = 0;
     });
-  }

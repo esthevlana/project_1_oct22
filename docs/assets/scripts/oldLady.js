@@ -1,5 +1,5 @@
 class OldLady{
-    constructor (x, y, width, height, color, ctx) {
+    constructor (x, y, width, height, color, ctx, frames) {
         this.x = x;
         this.y = y;
         this.width = width;
@@ -7,20 +7,15 @@ class OldLady{
         this.color = color;
         this.speedOldLady = 1;
         this.ctx = ctx;
+        this.img = new Image()
+        this.img.src = "docs/assets/images/oldlady1.png"
     }
-
-    /*moveUp() {
-        this.y -= 1;
-    }*/
 
     drawCanvas() {
-        this.ctx.fillStyle = this.color
-        this.ctx.fillRect(this.x, this.y, this.width, this.height);
+     /*    this.ctx.fillStyle = this.color
+        this.ctx.fillRect(this.x, this.y, this.width, this.height); */
+        this.ctx.drawImage(this.img, this.x, this.y, this.width, this.height);
     }
-
-    /*moveDown(){
-        this.y += 1;
-    }*/
 
     oldLadyMoves() {
         //this.game.frames++;
@@ -31,15 +26,5 @@ class OldLady{
         } if (this.y <= 100) {
             this.speedOldLady = 1 
         }
-    /*     let minY = 200;
-        let maxY = 550;
-        let yPosition = Math.floor(Math.random() * (maxY - minY) + minY);
-        this.y = yPosition;
-        if (yPosition > 500) {
-            this.y = false
-        } if (yPosition < 30) {
-            this.y = false
-        }
-      } */
     }
 }
