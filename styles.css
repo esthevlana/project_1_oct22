@@ -14,7 +14,7 @@ h1 {
     font-size: 45px;
     text-decoration: underline;
     color: #fb8500;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1px #78290f;
 }
 
 .game-intro {

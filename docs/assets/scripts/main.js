@@ -20,6 +20,7 @@ window.onload = () => {
       game.loseSong.currentTime = 0;
       game.winSong.pause();
       game.winSong.currentTime = 0;
+      game.plantCount = 0;
       startGame();
   }
 }
